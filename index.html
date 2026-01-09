@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>เว็บไซต์แนะนำคำสั่งHTML</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f1f1f1;
+}
+header {
+    background-color: #265CBF;
+    color: white;
+    padding: 20px;
+}
+.container {
+    padding: 20px;
+}
+.example {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 25px;
+    border-left: 5px solid #265CBF;
+}
+.explain {
+    background-color: #eefaf4;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-left: 3px solid #265CBF;
+}
+textarea {
+    width: 100%;
+    height: 100px;
+    font-family: Consolas, monospace;
+}
+button {
+    background-color: #265CBF;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+iframe {
+    width: 100%;
+    height: 110px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>เว็บไซต์แนะนำคำสั่งHTML</h1>
+    <p></p>
+</header>
+
+<div class="container">
+
+<!-- 1 -->
+<div class="example">
+<h3>1. &lt;p&gt; Paragraph</h3>
+<div class="explain">
+คำสั่ง <b>&lt;p&gt;</b> ใช้สำหรับแสดงข้อความเป็นย่อหน้า
+</div>
+<textarea id="c1"><p>Hello HTML</p></textarea>
+<button onclick="runCode('c1','r1')">Run</button>
+<iframe id="r1"></iframe>
+</div>
+
+<!-- 2 -->
+<div class="example">
+<h3>2. &lt;h1&gt; - &lt;h2&gt; Heading</h3>
+<div class="explain">
+คำสั่ง Heading ใช้แสดงหัวข้อ โดย &lt;h1&gt; ใหญ่ที่สุด
+</div>
+<textarea id="c2"><h1>Heading 1</h1><h2>Heading 2</h2></textarea>
+<button onclick="runCode('c2','r2')">Run</button>
+<iframe id="r2"></iframe>
+</div>
+
+<!-- 3 -->
+<div class="example">
+<h3>3. &lt;b&gt; Bold</h3>
+<div class="explain">
+คำสั่ง <b>&lt;b&gt;</b> ใช้ทำให้ข้อความเป็นตัวหนา
+</div>
+<textarea id="c3"><b>Bold Text</b></textarea>
+<button onclick="runCode('c3','r3')">Run</button>
+<iframe id="r3"></iframe>
+</div>
+
+<!-- 4 -->
+<div class="example">
+<h3>4. &lt;i&gt; Italic</h3>
+<div class="explain">
+คำสั่ง <b>&lt;i&gt;</b> ใช้ทำให้ข้อความเป็นตัวเอียง
+</div>
+<textarea id="c4"><i>Italic Text</i></textarea>
+<button onclick="runCode('c4','r4')">Run</button>
+<iframe id="r4"></iframe>
+</div>
+
+<!-- 5 -->
+<div class="example">
+<h3>5. &lt;br&gt; Line Break</h3>
+<div class="explain">
+คำสั่ง <b>&lt;br&gt;</b> ใช้ขึ้นบรรทัดใหม่
+</div>
+<textarea id="c5">Hello<br>HTML</textarea>
+<button onclick="runCode('c5','r5')">Run</button>
+<iframe id="r5"></iframe>
+</div>
+
+<!-- 6 -->
+<div class="example">
+<h3>6. &lt;hr&gt; Horizontal Rule</h3>
+<div class="explain">
+คำสั่ง <b>&lt;hr&gt;</b> ใช้สร้างเส้นคั่นแนวนอน
+</div>
+<textarea id="c6"><p>Text</p><hr><p>Text</p></textarea>
+<button onclick="runCode('c6','r6')">Run</button>
+<iframe id="r6"></iframe>
+</div>
+
+<!-- 7 -->
+<div class="example">
+<h3>7. &lt;ul&gt; Unordered List</h3>
+<div class="explain">
+ใช้ <b>&lt;ul&gt;</b> และ <b>&lt;li&gt;</b> สร้างรายการแบบจุด
+</div>
+<textarea id="c7"><ul><li>HTML</li><li>CSS</li></ul></textarea>
+<button onclick="runCode('c7','r7')">Run</button>
+<iframe id="r7"></iframe>
+</div>
+
+<!-- 8 -->
+<div class="example">
+<h3>8. &lt;ol&gt; Ordered List</h3>
+<div class="explain">
+คำสั่ง <b>&lt;ol&gt;</b> ใช้สร้างรายการแบบตัวเลข
+</div>
+<textarea id="c8"><ol><li>One</li><li>Two</li></ol></textarea>
+<button onclick="runCode('c8','r8')">Run</button>
+<iframe id="r8"></iframe>
+</div>
+
+<!-- 9 -->
+<div class="example">
+<h3>9. &lt;a&gt; Link</h3>
+<div class="explain">
+คำสั่ง <b>&lt;a&gt;</b> ใช้สร้างลิงก์ไปยังเว็บไซต์อื่น
+</div>
+<textarea id="c9"><a href="https://google.com">Google</a></textarea>
+<button onclick="runCode('c9','r9')">Run</button>
+<iframe id="r9"></iframe>
+</div>
+
+<!-- 10 -->
+<div class="example">
+<h3>10. &lt;img&gt; Image</h3>
+<div class="explain">
+คำสั่ง <b>&lt;img&gt;</b> ใช้แสดงรูปภาพ
+</div>
+<textarea id="c10"><img src="https://via.placeholder.com/100"></textarea>
+<button onclick="runCode('c10','r10')">Run</button>
+<iframe id="r10"></iframe>
+</div>
+
+<!-- 11 -->
+<div class="example">
+<h3>11. &lt;table&gt; Table</h3>
+<div class="explain">
+คำสั่ง <b>&lt;table&gt;</b> ใช้สร้างตารางข้อมูล
+</div>
+<textarea id="c11">
+<table border="1">
+<tr><th>Name</th><th>Age</th></tr>
+<tr><td>Tom</td><td>20</td></tr>
+</table>
+</textarea>
+<button onclick="runCode('c11','r11')">Run</button>
+<iframe id="r11"></iframe>
+</div>
+
+<!-- 12 -->
+<div class="example">
+<h3>12. &lt;button&gt; Button</h3>
+<div class="explain">
+คำสั่ง <b>&lt;button&gt;</b> ใช้สร้างปุ่ม
+</div>
+<textarea id="c12"><button>Click me</button></textarea>
+<button onclick="runCode('c12','r12')">Run</button>
+<iframe id="r12"></iframe>
+</div>
+
+<!-- 13 -->
+<div class="example">
+<h3>13. &lt;input&gt; Input</h3>
+<div class="explain">
+คำสั่ง <b>&lt;input&gt;</b> ใช้รับข้อมูลจากผู้ใช้
+</div>
+<textarea id="c13"><input type="text" placeholder="Enter name"></textarea>
+<button onclick="runCode('c13','r13')">Run</button>
+<iframe id="r13"></iframe>
+</div>
+
+<!-- 14 -->
+<div class="example">
+<h3>14. &lt;form&gt; Form</h3>
+<div class="explain">
+คำสั่ง <b>&lt;form&gt;</b> ใช้สร้างแบบฟอร์ม
+</div>
+<textarea id="c14">
+<form>
+<input type="text">
+<input type="submit">
+</form>
+</textarea>
+<button onclick="runCode('c14','r14')">Run</button>
+<iframe id="r14"></iframe>
+</div>
+
+<!-- 15 -->
+<div class="example">
+<h3>15. &lt;div&gt; Division</h3>
+<div class="explain">
+คำสั่ง <b>&lt;div&gt;</b> ใช้จัดกลุ่มและจัดรูปแบบเนื้อหา
+</div>
+<textarea id="c15"><div style="color:red;">Red Text</div></textarea>
+<button onclick="runCode('c15','r15')">Run</button>
+<iframe id="r15"></iframe>
+</div>
+
+</div>
+
+<footer>
+<p>© 2026 HTML Tutorial</p>
+</footer>
+
+<script>
+function runCode(codeId, resultId) {
+    document.getElementById(resultId).srcdoc =
+        document.getElementById(codeId).value;
+}
+</script>
+
+</body>
+</html>
